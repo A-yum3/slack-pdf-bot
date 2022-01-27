@@ -6,9 +6,12 @@ from slack_sdk import WebClient
 
 logging.basicConfig(level=logging.INFO)
 
-client = WebClient(os.environ["SLACK_BOT_TOKEN"])
+client = WebClient(os.environ.get("SLACK_BOT_TOKEN"))
 
-app = App()
+app = App(
+    token=os.environ.get("SLACK_BOT_TOKEN"),
+    signing_secret=os.environ.get("SLACK_SIGNING_SECRET"),
+)
 
 
 @app.event("reaction_added")
