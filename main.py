@@ -1,6 +1,9 @@
 import os
+
 from slack_bolt import App
 from slack_sdk import WebClient
+
+from converter import Converter
 
 client = WebClient(os.environ["SLACK_BOT_TOKEN"])
 
@@ -36,12 +39,12 @@ def reaction_add(event, say):
     for i in range(1, max_message_count + 1):  # 1-origin
         output_messages.append(messages[i]["text"])
 
-    response_message = "\n".join(output_messages)
+    file_name = Converter(output_messages).to_pdf()
 
-    client.chat_postEphemeral(
-        channel=channel,
-        user=item_user,
-        text=response_message
+    client.files_upload(
+        channels=channel,
+        initial_comment="スレッドで要件定義はやめてくれ委員会会長",
+        file=file_name
     )
 
 
