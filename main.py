@@ -1,6 +1,8 @@
 import os
-
 from slack_bolt import App
+from slack_sdk import WebClient
+
+client = WebClient(os.environ["SLACK_BOT_TOKEN"])
 
 app = App(
     signing_secret=os.environ.get("SLACK_SIGNING_SECRET"),
@@ -8,14 +10,34 @@ app = App(
 )
 
 
-# ここには Flask 固有の記述はありません
-# App はフレームワークやランタイムに一切依存しません
-@app.command("/hello-bolt")
-def hello(body, ack):
-    ack(f"Hi <@{body['user_id']}>!")
+# 絵文字が付けられたら付けられたスレッドを読む
+@app.event('reaction_added')
+def reaction_add(event, say):
+    emoji = event["reaction"]
+    if emoji != "pdf":
+        return
+    channel = event["item"]["channel"]
+    ts = event["item"]["ts"]
+    item_user = event["item_user"]
+
+    group_history = client.conversations_replies(channel=channel, ts=ts)
+    messages = group_history.data["messages"]
+    title = messages[0]["text"]
+    max_message_count = int(messages[0]["reply_count"])
+
+    output_messages = []
+    for i in range(1, max_message_count):
+        output_messages.append(messages[i]["text"])
+
+    response_message = "\n".join(output_messages)
+
+    client.chat_postEphemeral(
+        channel=channel,
+        user=item_user,
+        text=response_message
+    )
 
 
-# Flask アプリを初期化します
 from flask import Flask, request
 
 flask_app = Flask(__name__)
