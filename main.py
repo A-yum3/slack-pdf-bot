@@ -26,7 +26,7 @@ def reaction_add(event, say):
     max_message_count = int(messages[0]["reply_count"])
 
     output_messages = []
-    for i in range(1, max_message_count):
+    for i in range(1, max_message_count + 1):  # 1-origin
         output_messages.append(messages[i]["text"])
 
     response_message = "\n".join(output_messages)
