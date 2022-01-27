@@ -13,6 +13,7 @@ app = App(
 # 絵文字が付けられたら付けられたスレッドを読む
 @app.event('reaction_added')
 def reaction_add(event, say):
+    # response処理 TODO toFunction
     emoji = event["reaction"]
     if emoji != "pdf":
         return
@@ -20,10 +21,16 @@ def reaction_add(event, say):
     ts = event["item"]["ts"]
     item_user = event["item_user"]
 
+    # timestampからメッセージ特定
     group_history = client.conversations_replies(channel=channel, ts=ts)
     messages = group_history.data["messages"]
-    title = messages[0]["text"]
+
+    # スレッド元でない可能性を考慮し、再取得 TODO refactor
+    ts = messages[0]["thread_ts"]
+    group_history = client.conversations_replies(channel=channel, ts=ts)
+    messages = group_history.data["messages"]
     max_message_count = int(messages[0]["reply_count"])
+    title = messages[0]["text"]
 
     output_messages = []
     for i in range(1, max_message_count + 1):  # 1-origin
