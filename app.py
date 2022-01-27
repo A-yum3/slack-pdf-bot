@@ -32,3 +32,7 @@ handler = SlackRequestHandler(app)
 def slack_events():
     # handler はアプリのディスパッチメソッドを実行します
     return handler.handle(request)
+
+
+if __name__ == "__main__":
+    flask_app.run(host="0.0.0.0", port=3000)
