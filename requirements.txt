@@ -1,0 +1,4 @@
+Flask==2.0.2
+requests==2.25.1
+slack-bolt==1.11.2
+slack-sdk==3.13.0
