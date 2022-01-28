@@ -1,0 +1,12 @@
+{
+  "type": "reaction_added",
+  "user": "U01QE1SF8LW",
+  "reaction": "pdf",
+  "item_user": "U01QE1SF8LW",
+  "item": {
+    "type": "message",
+    "channel": "C02BMCSF15K",
+    "ts": "1643276518.002100"
+  },
+  "event_ts": "1360782804.083113"
+}
