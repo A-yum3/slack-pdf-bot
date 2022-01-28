@@ -18,10 +18,9 @@ class Converter:
 
         # insert text
         for index, text in enumerate(self.value_lists):
-            pdf.drawCentredString(x=100, y=(height / 2) - (index * 50), text=text)
+            pdf.drawString(x=50, y=(height - 50) - (index * 50), text=text)
 
         pdf.save()
         return file_name
 
-
-Converter(['こんにちは', '世界']).to_pdf()
+# Converter(['こんにちは', '世界']).to_pdf()
