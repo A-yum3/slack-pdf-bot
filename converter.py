@@ -5,9 +5,11 @@ from reportlab.pdfgen import canvas
 
 
 class Converter:
+    # TODO Messageを受け取るように適合
     def __init__(self, value_lists):
         self.value_lists = value_lists
 
+    # TODO 表示形式修正
     def to_pdf(self):
         pdfmetrics.registerFont(cidfonts.UnicodeCIDFont("HeiseiMin-W3"))
 
