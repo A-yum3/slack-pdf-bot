@@ -1,3 +1,6 @@
+from converter import Converter
+
+
 class TestConverter(object):
     def test_output_pdf(self):
-        pass
+        Converter([]).to_pdf()
