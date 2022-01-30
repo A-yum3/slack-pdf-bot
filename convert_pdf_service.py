@@ -4,7 +4,7 @@ from slack_sdk import WebClient
 from slack_sdk.web.slack_response import SlackResponse
 
 from converter import Converter
-from message import Message
+from message import MessageFactory
 
 
 class ConvertPdfService:
@@ -40,8 +40,9 @@ class ConvertPdfService:
 
         # json_to_Message
         messages = []
+        factory = MessageFactory()
         for message in group_history.data["messages"]:
-            messages.append(Message(message))
+            messages.extend(factory.creates(message))
 
         file_name = Converter(messages).to_pdf()
 
