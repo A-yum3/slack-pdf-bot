@@ -93,6 +93,40 @@
           "indent": 0
         },
         {
+          "type": "rich_text_list",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "3"
+                }
+              ]
+            }
+          ],
+          "style": "ordered",
+          "indent": 0
+        },
+        {
           "type": "rich_text_preformatted",
           "elements": [
             {
