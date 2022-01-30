@@ -1,0 +1,114 @@
+@startjson
+
+{
+  "blocks": [
+    {
+      "type": "rich_text",
+      "elements": [
+        {
+          "type": "rich_text_section",
+          "elements": [
+            {
+              "type": "text",
+              "text": "テスト"
+            },
+            {
+              "type": "emoji",
+              "name": "genbacat_carry"
+            },
+            {
+              "type": "user",
+              "user_id": "XXXXXXXX"
+            },
+            {
+              "type": "text",
+              "text": "No",
+              "style": {
+                "bold": true
+              }
+            },
+            {
+              "type": "link",
+              "url": "https://example.com"
+            },
+            {
+              "type": "text",
+              "text": "dadadsada",
+              "style": {
+                "strike": true
+              }
+            },
+            {
+              "type": "text",
+              "text": "dadasda",
+              "style":{
+                "italic": true
+              }
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "text": "dadadada",
+              "style": {
+                "code": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "rich_text_list",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "3"
+                }
+              ]
+            }
+          ],
+          "style": "bullet",
+          "indent": 0
+        },
+        {
+          "type": "rich_text_preformatted",
+          "elements": [
+            {
+              "type": "text",
+              "text": "dasdadsadsa"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "url_private": "https://example.com"
+    }
+  ]
+}
+
+@endjson
