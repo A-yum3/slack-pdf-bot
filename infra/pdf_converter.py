@@ -8,13 +8,13 @@ from reportlab.platypus.flowables import Spacer
 from reportlab.platypus.frames import Frame
 
 
-class Converter:
+class PdfConverter:
     # TODO Messageを受け取るように修正
     def __init__(self, value_lists):
         self.value_lists = value_lists
 
     # TODO 表示形式修正
-    def to_pdf(self):
+    def execute(self):
         pdfmetrics.registerFont(cidfonts.UnicodeCIDFont("HeiseiMin-W3"))
 
         file_name = 'output.pdf'  # ファイル名を設定

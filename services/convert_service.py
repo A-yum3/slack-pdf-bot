@@ -3,11 +3,11 @@ import os
 from slack_sdk import WebClient
 from slack_sdk.web.slack_response import SlackResponse
 
-from converter import Converter
-from message import MessageFactory
+from factory.message_factory import MessageFactory
+from infra.pdf_converter import PdfConverter
 
 
-class ConvertPdfService:
+class ConvertService:
     def __init__(self):
         self.client = WebClient(os.environ.get("SLACK_BOT_TOKEN"))
 
@@ -44,7 +44,7 @@ class ConvertPdfService:
         for message in group_history.data["messages"]:
             messages.extend(factory.creates(message))
 
-        file_name = Converter(messages).to_pdf()
+        file_name = PdfConverter(messages).execute()
 
         return self.client.files_upload(
             channels=channel,

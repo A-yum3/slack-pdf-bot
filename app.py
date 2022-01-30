@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from slack_bolt import App
 
-from convert_pdf_service import ConvertPdfService
+from services.convert_service import ConvertService
 
 load_dotenv()  # debug
 
@@ -39,5 +39,5 @@ def reaction_add(event, say):
     """
     emoji = event["reaction"]
     if emoji == "pdf":
-        return ConvertPdfService().execute(event, say)
+        return ConvertService().execute(event, say)
     return True

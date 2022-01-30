@@ -3,7 +3,7 @@ import os
 
 from slack_sdk import WebClient
 
-from convert_pdf_service import ConvertPdfService
+from services.convert_service import ConvertService
 
 
 class TestConvertPdfService(object):
@@ -28,7 +28,7 @@ class TestConvertPdfService(object):
         mocker.patch.object(WebClient, 'files_upload', return_value=True)
         mocker.patch.object(WebClient, 'conversations_replies', return_value=dummy_slack_response)
 
-        result = ConvertPdfService(event, None).execute()
+        result = ConvertService().execute(event, None)
         assert result
 
         os.remove('output.pdf')
