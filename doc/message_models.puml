@@ -1,0 +1,44 @@
+@startuml
+class MessageFactory {
+    +Message create(dict message)
+}
+
+MessageFactory --> Message
+
+class Message {
+    MessageContent[] message_contents
+    FileContent[] files
+}
+
+Message *-- MessageContent
+
+interface MessageContent {
+    Element[] elements
+    +Element[] get_elements()
+}
+
+MessageContent <|.. RichTextSection
+MessageContent <|.. RichTextList
+MessageContent <|.. RichTextPreformatted
+
+class RichTextSection {
+}
+
+class RichTextList {
+}
+
+class RichTextPreformatted {
+}
+
+class Element {
+    string type
+    string value
+    string style
+    +string get_with_tag()
+}
+
+RichTextList *-- RichTextSection
+
+MessageContent *-- Element
+
+@enduml
