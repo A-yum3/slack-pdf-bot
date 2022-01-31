@@ -1,5 +1,6 @@
 import json
 
+from dotenv import load_dotenv
 from slack_sdk import WebClient
 
 from app.services.convert_service import ConvertService
@@ -13,6 +14,8 @@ class TestConvertService(object):
         :param mocker:
         :return:
         """
+
+        load_dotenv()
 
         with open('dummies/conversations_replies_dummy.json', 'r') as f:
             conversations_replies_response = json.load(f)

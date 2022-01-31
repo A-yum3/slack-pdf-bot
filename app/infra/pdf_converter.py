@@ -11,8 +11,9 @@ from app.enums.rich_text_type import RichTextType
 
 
 class PdfConverter:
-    def __init__(self, messages: list):
+    def __init__(self, messages: list, user_table: dict):
         self.messages = messages
+        self.user_table = user_table
 
     # TODO 表示形式修正
     def execute(self):
@@ -44,6 +45,7 @@ class PdfConverter:
         space = Spacer(3 * mm, 3 * mm)
 
         for message in self.messages:
+            print(self.user_table[message.user])  # TODO 右側に表示する
             for content in message.message_contents:
                 if content is None:
                     continue
@@ -57,7 +59,6 @@ class PdfConverter:
                 else:
                     for element in content.elements:
                         p = Paragraph(element.get_with_tag(), style)
-                        print(p)
                         flowables.append(p)
                         flowables.append(space)
 

@@ -38,10 +38,17 @@ class ConvertService:
 
         group_history = self.get_threads(channel, timestamp)
 
+        # TODO Refactor
+        user_table = {}
+        users = group_history.data['messages'][0]['reply_users']
+        for user in users:
+            response = self.client.users_info(user=user)
+            user_table[user] = response.data['user']['real_name']
+
         # json_to_Message
         messages = [MessageFactory.create(message) for message in group_history.data["messages"]]
 
-        file_name = PdfConverter(messages).execute()
+        file_name = PdfConverter(messages, user_table).execute()
 
         return self.client.files_upload(
             channels=channel,

@@ -1,11 +1,8 @@
 import os
 
-from dotenv import load_dotenv
 from slack_bolt import App
 
 from services.convert_service import ConvertService
-
-load_dotenv()  # debug
 
 app = App(
     signing_secret=os.environ.get("SLACK_SIGNING_SECRET"),
