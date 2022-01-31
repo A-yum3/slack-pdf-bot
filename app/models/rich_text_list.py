@@ -1,5 +1,5 @@
-from models.message_content import MessageContent
-from models.rich_text_section import RichTextSection
+from app.models.message_content import MessageContent
+from app.models.rich_text_section import RichTextSection
 
 
 class RichTextList(MessageContent):

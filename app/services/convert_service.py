@@ -3,8 +3,8 @@ import os
 from slack_sdk import WebClient
 from slack_sdk.web.slack_response import SlackResponse
 
-from factory.message_factory import MessageFactory
-from infra.pdf_converter import PdfConverter
+from app.factory.message_factory import MessageFactory
+from app.infra.pdf_converter import PdfConverter
 
 
 class ConvertService:

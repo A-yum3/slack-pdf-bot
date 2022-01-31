@@ -1,5 +1,5 @@
-from enums.element_type import ElementType
-from enums.text_style import TextStyle
+from app.enums.element_type import ElementType
+from app.enums.text_style import TextStyle
 
 
 class Element:

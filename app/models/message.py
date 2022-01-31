@@ -1,4 +1,4 @@
-from enums.rich_text_type import RichTextType
+from app.enums.rich_text_type import RichTextType
 
 
 class Message:

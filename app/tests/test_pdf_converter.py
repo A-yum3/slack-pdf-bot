@@ -1,4 +1,4 @@
-from infra.pdf_converter import PdfConverter
+from app.infra.pdf_converter import PdfConverter
 
 
 class TestConverter(object):

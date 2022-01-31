@@ -1,5 +1,5 @@
-from models.element import Element
-from models.message_content import MessageContent
+from app.models.element import Element
+from app.models.message_content import MessageContent
 
 
 class RichTextSection(MessageContent):

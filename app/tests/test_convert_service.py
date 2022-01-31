@@ -3,7 +3,7 @@ import os
 
 from slack_sdk import WebClient
 
-from services.convert_service import ConvertService
+from app.services.convert_service import ConvertService
 
 
 class TestConvertPdfService(object):
@@ -15,10 +15,10 @@ class TestConvertPdfService(object):
         :return:
         """
 
-        with open('./dummies/conversations_replies_dummy.json', 'r') as f:
+        with open('dummies/conversations_replies_dummy.json', 'r') as f:
             conversations_replies_response = json.load(f)
 
-        with open('./dummies/reaction_added.json', 'r') as f:
+        with open('dummies/reaction_added.json', 'r') as f:
             event = json.load(f)
 
         dummy_slack_response = type("dummy", (object,), {

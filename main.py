@@ -3,7 +3,7 @@ import os
 from flask import Flask, request
 from slack_bolt.adapter.flask import SlackRequestHandler
 
-from app import app
+from app.app import app
 
 flask_app = Flask(__name__)
 

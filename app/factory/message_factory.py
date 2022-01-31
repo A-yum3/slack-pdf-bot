@@ -1,4 +1,4 @@
-from models.message import Message
+from app.models.message import Message
 
 
 class MessageFactory:
