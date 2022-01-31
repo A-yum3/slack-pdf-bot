@@ -1,21 +1,23 @@
 from reportlab.lib.pagesizes import mm, portrait, A4
 from reportlab.lib.styles import ParagraphStyle
-from reportlab.pdfbase import cidfonts
 from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import BaseDocTemplate, PageTemplate
-from reportlab.platypus import Paragraph, PageBreak
+from reportlab.platypus import Paragraph
 from reportlab.platypus.flowables import Spacer
 from reportlab.platypus.frames import Frame
 
+from app.enums.rich_text_type import RichTextType
+
 
 class PdfConverter:
-    # TODO Messageを受け取るように修正
-    def __init__(self, value_lists):
-        self.value_lists = value_lists
+    def __init__(self, messages: list):
+        self.messages = messages
 
     # TODO 表示形式修正
     def execute(self):
-        pdfmetrics.registerFont(cidfonts.UnicodeCIDFont("HeiseiMin-W3"))
+        SOURCE_HAN_SANS_PATH = '../../fonts/SourceHanSansHW-VF.ttf'
+        pdfmetrics.registerFont(TTFont('SourceHanSans', SOURCE_HAN_SANS_PATH))
 
         file_name = 'output.pdf'  # ファイル名を設定
 
@@ -30,39 +32,34 @@ class PdfConverter:
         doc.addPageTemplates(page_template)
         style_dict = {
             "name": "nomarl",
-            "fontName": "HeiseiMin-W3",
+            "fontName": "SourceHanSans",
             "fontSize": 20,
             "leading": 20,
-            "firstLineIndent": 20,
+            "firstLineIndent": 0,
         }
         style = ParagraphStyle(**style_dict)
 
         flowables = []
 
-        space = Spacer(10 * mm, 10 * mm)
+        space = Spacer(3 * mm, 3 * mm)
 
-        para = Paragraph("こんなものは、reportlabではない!!<br/><br/>", style)
-        flowables.append(para)
-        flowables.append(space)
-        para = Paragraph("本当のreportlabをお見せします。", style)
-        flowables.append(para)
-        flowables.append(space)
-        para = Paragraph("次のページに来てください", style)
-        flowables.append(para)
+        for message in self.messages:
+            for content in message.message_contents:
+                if content is None:
+                    continue
 
-        # 改ページ
-        flowables.append(PageBreak())
-
-        para = Paragraph("<span backcolor=yellow>フーレム1</span>", style)
-        flowables.append(para)
-        para = Paragraph("Paragraphを使うことで長い文章を自動で折り返してくれます。さらにはみ出せば次のページに進みます。", style)
-        flowables.append(para)
-        para = Paragraph("ちゃんと続きの高さから次のParagraphを描画してくれます。", style)
-        flowables.append(para)
-        para = Paragraph("Frameを使えば、はみ出した分は次のフレームまたはページへ自動で進みます。", style)
-        flowables.append(para)
-        para = Paragraph("Frameを使うことで、段組みのような複雑なレイアウトを表現できます。", style)
-        flowables.append(para)
+                if content.type == RichTextType.LIST.value:
+                    for inner_content in content.elements:
+                        for element in inner_content.elements:
+                            p = Paragraph(element.get_with_tag(), style)
+                            flowables.append(p)
+                            flowables.append(space)
+                else:
+                    for element in content.elements:
+                        p = Paragraph(element.get_with_tag(), style)
+                        print(p)
+                        flowables.append(p)
+                        flowables.append(space)
 
         doc.multiBuild(flowables)
 

@@ -1,5 +1,4 @@
 import json
-import os
 
 from slack_sdk import WebClient
 
@@ -31,4 +30,4 @@ class TestConvertService(object):
         result = ConvertService().execute(event, None)
         assert result
 
-        os.remove('output.pdf')
+        # os.remove('output.pdf')

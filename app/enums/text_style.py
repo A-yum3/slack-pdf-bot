@@ -13,29 +13,30 @@ class TextStyle(Enum):
         if style is None:
             return None
 
-        if style.get(cls.BOLD):
-            return cls.BOLD
-        elif style.get(cls.STRIKE):
-            return cls.STRIKE
-        elif style.get(cls.ITALIC):
-            return cls.STRIKE
-        elif style.get(cls.CODE):
-            return cls.CODE
+        if style.get(TextStyle.BOLD.value):
+            return TextStyle.BOLD
+        elif style.get(TextStyle.STRIKE.value):
+            return TextStyle.STRIKE
+        elif style.get(TextStyle.ITALIC.value):
+            return TextStyle.ITALIC
+        elif style.get(TextStyle.CODE.value):
+            return TextStyle.CODE
         else:
             return None
 
     @classmethod
-    def get_tag(cls, style: 'TextStyle') -> Union[tuple, None]:
+    def get_tag(cls, style: 'TextStyle') -> tuple:
+
         if style is None:
             return None
 
-        if style == cls.BOLD:
+        if style == TextStyle.BOLD:
             return "<b>", "</b>"
-        elif style == cls.STRIKE:
+        elif style == TextStyle.STRIKE:
             return "<strike>", "</strike>"
-        elif style == cls.ITALIC:
+        elif style == TextStyle.ITALIC:
             return "<i>", "</i>"
-        elif style == cls.CODE:
+        elif style == TextStyle.CODE:
             return "", ""  # TODO 考える
         else:
-            return None
+            return "", ""

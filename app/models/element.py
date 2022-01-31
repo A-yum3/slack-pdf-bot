@@ -13,7 +13,20 @@ class Element:
         self.url: str = element.get('url')
         self.style: Union[TextStyle, None] = TextStyle.get_style(element.get('style'))
 
+        self.convert_br_tag()
+
     def get_with_tag(self) -> str:
-        # とりあえずElementType.TEXTのみ考慮
-        start, end = TextStyle.get_tag(self.style)
-        return start + self.text + end
+        if self.text is None:
+            return ""
+
+        if self.style is None:
+            return self.text
+        else:
+            # TODO とりあえずElementType.TEXTのみ考慮
+            start, end = TextStyle.get_tag(self.style)
+            return start + self.text + end
+
+    def convert_br_tag(self) -> None:
+        if self.text is None:
+            return
+        self.text = self.text.replace("\n", "<br/>")

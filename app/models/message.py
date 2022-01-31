@@ -5,8 +5,10 @@ class Message:
     def __init__(self, message: dict):
         self.blocks = message.get('blocks')
         self.files = message.get('files')  # TODO
-        if self.blocks is not None:
-            self.message_contents = self.create_contents()
+        self.message_contents = self.create_contents()
 
     def create_contents(self):
+        if self.blocks is None:
+            return []
+        
         return [RichTextType.make_content(content) for block in self.blocks for content in block.get('elements')]
