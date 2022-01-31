@@ -1,4 +1,10 @@
 from enum import Enum
+from typing import Union
+
+from models.message_content import MessageContent
+from models.rich_text_list import RichTextList
+from models.rich_text_preformatted import RichTextPreformatted
+from models.rich_text_section import RichTextSection
 
 
 class RichTextType(Enum):
@@ -7,11 +13,13 @@ class RichTextType(Enum):
     PREFORMATTED = "rich_text_preformatted"
 
     @classmethod
-    def get_value(cls, element: dict):
-        element_type = element.get('type')
-        if element_type == cls.SECTION:
-            pass
-        elif element_type == cls.LIST:
-            pass
-        elif element_type == cls.PREFORMATTED:
-            pass
+    def make_content(cls, element: dict) -> Union[MessageContent, None]:
+        section_type = element.get('type')
+        if section_type == cls.SECTION:
+            return RichTextSection(element)
+        elif section_type == cls.LIST:
+            return RichTextList(element)
+        elif section_type == cls.PREFORMATTED:
+            return RichTextPreformatted(element)
+        else:
+            return None

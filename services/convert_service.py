@@ -40,9 +40,8 @@ class ConvertService:
 
         # json_to_Message
         messages = []
-        factory = MessageFactory()
         for message in group_history.data["messages"]:
-            messages.extend(factory.create(message))
+            messages.append(MessageFactory.create(message))
 
         file_name = PdfConverter(messages).execute()
 
