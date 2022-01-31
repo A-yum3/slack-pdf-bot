@@ -55,6 +55,11 @@
               "style": {
                 "code": true
               }
+            },
+            {
+                "type": "link",
+                "url": "http://example.com",
+                "text": "test"
             }
           ]
         },

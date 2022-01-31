@@ -55,6 +55,11 @@
                 {
                   "type": "text",
                   "text": "もりちゃぁん"
+                },
+                {
+                  "type": "link",
+                  "url": "http://example.com",
+                  "text": "test"
                 }
               ]
             }
