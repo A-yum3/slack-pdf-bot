@@ -42,7 +42,7 @@ class ConvertService:
         messages = []
         factory = MessageFactory()
         for message in group_history.data["messages"]:
-            messages.extend(factory.creates(message))
+            messages.extend(factory.create(message))
 
         file_name = PdfConverter(messages).execute()
 
