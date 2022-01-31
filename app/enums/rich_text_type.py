@@ -15,11 +15,11 @@ class RichTextType(Enum):
     @classmethod
     def make_content(cls, element: dict) -> Union[MessageContent, None]:
         section_type = element.get('type')
-        if section_type == cls.SECTION:
+        if section_type == RichTextType.SECTION.value:
             return RichTextSection(element)
-        elif section_type == cls.LIST:
+        elif section_type == RichTextType.LIST.value:
             return RichTextList(element)
-        elif section_type == cls.PREFORMATTED:
+        elif section_type == RichTextType.PREFORMATTED.value:
             return RichTextPreformatted(element)
         else:
             return None

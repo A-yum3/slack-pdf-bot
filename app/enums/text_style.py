@@ -10,6 +10,9 @@ class TextStyle(Enum):
 
     @classmethod
     def get_style(cls, style: dict) -> Union['TextStyle', None]:
+        if style is None:
+            return None
+
         if style.get(cls.BOLD):
             return cls.BOLD
         elif style.get(cls.STRIKE):
@@ -23,6 +26,9 @@ class TextStyle(Enum):
 
     @classmethod
     def get_tag(cls, style: 'TextStyle') -> Union[tuple, None]:
+        if style is None:
+            return None
+
         if style == cls.BOLD:
             return "<b>", "</b>"
         elif style == cls.STRIKE:

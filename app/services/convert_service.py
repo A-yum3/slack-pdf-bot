@@ -39,9 +39,7 @@ class ConvertService:
         group_history = self.get_threads(channel, timestamp)
 
         # json_to_Message
-        messages = []
-        for message in group_history.data["messages"]:
-            messages.append(MessageFactory.create(message))
+        messages = [MessageFactory.create(message) for message in group_history.data["messages"]]
 
         file_name = PdfConverter(messages).execute()
 

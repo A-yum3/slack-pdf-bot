@@ -6,7 +6,7 @@ from slack_sdk import WebClient
 from app.services.convert_service import ConvertService
 
 
-class TestConvertPdfService(object):
+class TestConvertService(object):
     def test_execute(self, mocker):
         """
         reaction_addが行われた際に正常にプロセスが終了する

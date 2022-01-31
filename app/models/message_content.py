@@ -1,5 +1,5 @@
 import abc
 
 
-class MessageContent(abc):
+class MessageContent(abc.ABC):
     pass

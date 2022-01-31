@@ -1,3 +1,5 @@
+from typing import Union
+
 from app.enums.element_type import ElementType
 from app.enums.text_style import TextStyle
 
@@ -9,7 +11,7 @@ class Element:
         self.user_id: str = element.get('user_id')
         self.name: str = element.get('name')
         self.url: str = element.get('url')
-        self.style: TextStyle = TextStyle.get_style(element.get('style'))
+        self.style: Union[TextStyle, None] = TextStyle.get_style(element.get('style'))
 
     def get_with_tag(self) -> str:
         # とりあえずElementType.TEXTのみ考慮
