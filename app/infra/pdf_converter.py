@@ -1,3 +1,4 @@
+from reportlab.lib.enums import TA_RIGHT
 from reportlab.lib.pagesizes import mm, portrait, A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
@@ -20,32 +21,46 @@ class PdfConverter:
         SOURCE_HAN_SANS_PATH = '../../fonts/SourceHanSansHW-VF.ttf'
         pdfmetrics.registerFont(TTFont('SourceHanSans', SOURCE_HAN_SANS_PATH))
 
-        file_name = 'output.pdf'  # ファイル名を設定
+        file_name = 'output.pdf'
 
         doc = BaseDocTemplate(file_name, title="test", pagesize=portrait(A4))
 
-        show = 1  # Frameの枠を表示
         frames = [
-            Frame(10 * mm, 20 * mm, 190 * mm, 260 * mm, showBoundary=show),
+            Frame(10 * mm, 20 * mm, 190 * mm, 260 * mm, showBoundary=1),
         ]
 
         page_template = PageTemplate("frames", frames=frames)
         doc.addPageTemplates(page_template)
-        style_dict = {
-            "name": "nomarl",
+        style_text = {
+            "name": "normal",
             "fontName": "SourceHanSans",
-            "fontSize": 20,
+            "fontSize": 16,
+            "leading": 20,
+            "firstLineIndent": 0,
+            "alignment": TA_RIGHT,
+        }
+        style = ParagraphStyle(**style_text)
+
+        style_name = {
+            "name": "normal",
+            "fontName": "SourceHanSans",
+            "fontSize": 10,
             "leading": 20,
             "firstLineIndent": 0,
         }
-        style = ParagraphStyle(**style_dict)
+        name_style = ParagraphStyle(**style_name)
 
         flowables = []
 
         space = Spacer(3 * mm, 3 * mm)
 
         for message in self.messages:
-            print(self.user_table[message.user])  # TODO 右側に表示する
+            image_text = f'<img src="{self.user_table[message.user]["image"]}" valign="top"/>'
+
+            flowables.append(Paragraph(image_text))
+            flowables.append(Spacer(5 * mm, 5 * mm))
+            flowables.append(Paragraph(self.user_table[message.user]['name'], name_style))
+
             for content in message.message_contents:
                 if content is None:
                     continue

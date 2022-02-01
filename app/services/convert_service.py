@@ -43,7 +43,10 @@ class ConvertService:
         users = group_history.data['messages'][0]['reply_users']
         for user in users:
             response = self.client.users_info(user=user)
-            user_table[user] = response.data['user']['real_name']
+            user_table[user] = {
+                'name': response.data['user']['real_name'],
+                'image': response.data['user']['profile']['image_24']
+            }
 
         # json_to_Message
         messages = [MessageFactory.create(message) for message in group_history.data["messages"]]
