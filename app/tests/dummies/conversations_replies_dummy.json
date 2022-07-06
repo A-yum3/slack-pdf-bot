@@ -1,0 +1,1334 @@
+{
+  "ok": true,
+  "messages": [
+    {
+      "client_msg_id": "1b5e5912-a25f-40b0-8c2a-459acf644acd",
+      "type": "message",
+      "text": "テスト",
+      "user": "U01QE1SF8LW",
+      "ts": "1643276518.002100",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "Ann8",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "テスト"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "reply_count": 29,
+      "reply_users_count": 3,
+      "latest_reply": "1643367194.904969",
+      "reply_users": [
+        "U01QE1SF8LW",
+        "U01CWUY6ELE",
+        "U01QT03LVEG"
+      ],
+      "is_locked": false,
+      "subscribed": false
+    },
+    {
+      "client_msg_id": "96634e84-2d3c-4237-9fba-9dc859a111c9",
+      "type": "message",
+      "text": "もりちゃぁん",
+      "user": "U01QE1SF8LW",
+      "ts": "1643276525.002200",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "ZVrmY",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "もりちゃぁん"
+                },
+                {
+                  "type": "link",
+                  "url": "http://example.com",
+                  "text": "test"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "4da84520-918a-4842-a574-23d7291ff34e",
+      "type": "message",
+      "text": "ウユニ",
+      "user": "U01CWUY6ELE",
+      "ts": "1643276555.003200",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "V4=9X",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "ウユニ"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "6c0a69c9-e043-4ee6-9134-230e8e4ddbd8",
+      "type": "message",
+      "text": "混ざって\n\nだけ\n\n可読性が",
+      "user": "U01QE1SF8LW",
+      "ts": "1643276556.003400",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "Rg=",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "混ざって\n\nだけ\n\n可読性が"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "eec5c139-b256-4881-8e9d-154f19d31a76",
+      "type": "message",
+      "text": ":genbacat_carry::heart_eyes::kissing_smiling_eyes:",
+      "user": "U01QE1SF8LW",
+      "ts": "1643276572.003600",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "Ber",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "emoji",
+                  "name": "genbacat_carry"
+                },
+                {
+                  "type": "emoji",
+                  "name": "heart_eyes"
+                },
+                {
+                  "type": "emoji",
+                  "name": "kissing_smiling_eyes"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "type": "message",
+      "text": "",
+      "files": [
+        {
+          "id": "F02V727EDE3",
+          "created": 1643178017,
+          "timestamp": 1643178017,
+          "name": "image.png",
+          "title": "image.png",
+          "mimetype": "image/png",
+          "filetype": "png",
+          "pretty_type": "PNG",
+          "user": "U01QE1SF8LW",
+          "editable": false,
+          "size": 19729,
+          "mode": "hosted",
+          "is_external": false,
+          "external_type": "",
+          "is_public": true,
+          "public_url_shared": false,
+          "display_as_bot": false,
+          "username": "",
+          "url_private": "https://files.slack.com/files-pri/T02DHNZ5N-F02V727EDE3/image.png",
+          "url_private_download": "https://files.slack.com/files-pri/T02DHNZ5N-F02V727EDE3/download/image.png",
+          "media_display_type": "unknown",
+          "thumb_64": "https://files.slack.com/files-tmb/T02DHNZ5N-F02V727EDE3-c16906042a/image_64.png",
+          "thumb_80": "https://files.slack.com/files-tmb/T02DHNZ5N-F02V727EDE3-c16906042a/image_80.png",
+          "thumb_360": "https://files.slack.com/files-tmb/T02DHNZ5N-F02V727EDE3-c16906042a/image_360.png",
+          "thumb_360_w": 360,
+          "thumb_360_h": 13,
+          "thumb_480": "https://files.slack.com/files-tmb/T02DHNZ5N-F02V727EDE3-c16906042a/image_480.png",
+          "thumb_480_w": 480,
+          "thumb_480_h": 18,
+          "thumb_160": "https://files.slack.com/files-tmb/T02DHNZ5N-F02V727EDE3-c16906042a/image_160.png",
+          "thumb_720": "https://files.slack.com/files-tmb/T02DHNZ5N-F02V727EDE3-c16906042a/image_720.png",
+          "thumb_720_w": 720,
+          "thumb_720_h": 26,
+          "thumb_800": "https://files.slack.com/files-tmb/T02DHNZ5N-F02V727EDE3-c16906042a/image_800.png",
+          "thumb_800_w": 800,
+          "thumb_800_h": 29,
+          "thumb_960": "https://files.slack.com/files-tmb/T02DHNZ5N-F02V727EDE3-c16906042a/image_960.png",
+          "thumb_960_w": 960,
+          "thumb_960_h": 35,
+          "thumb_1024": "https://files.slack.com/files-tmb/T02DHNZ5N-F02V727EDE3-c16906042a/image_1024.png",
+          "thumb_1024_w": 1024,
+          "thumb_1024_h": 38,
+          "original_w": 1387,
+          "original_h": 51,
+          "thumb_tiny": "AwABADCk/U/UUo6CkfqfqKUdBWgDD938aB94UH7v40D7woGSUjfdpaRvu0CP/9k=",
+          "permalink": "https://sonicmoov.slack.com/files/U01QE1SF8LW/F02V727EDE3/image.png",
+          "permalink_public": "https://slack-files.com/T02DHNZ5N-F02V727EDE3-d9fa7559b0",
+          "is_starred": false,
+          "has_rich_preview": false
+        }
+      ],
+      "upload": false,
+      "user": "U01QE1SF8LW",
+      "display_as_bot": false,
+      "ts": "1643276583.003800",
+      "client_msg_id": "f6def4a4-7354-4857-8a76-f22e4fe1f667",
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "539b0e79-24ac-416b-99c4-9e3ce9959d2d",
+      "type": "message",
+      "text": "<@U01QE1SF8LW> 口語認識？",
+      "user": "U01CWUY6ELE",
+      "ts": "1643276606.004500",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "1pi",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "user",
+                  "user_id": "U01QE1SF8LW"
+                },
+                {
+                  "type": "text",
+                  "text": " 口語認識？"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "d3677307-4cfb-4cec-adb0-57e97e7ffa49",
+      "type": "message",
+      "text": "*NO*",
+      "user": "U01QE1SF8LW",
+      "ts": "1643276626.004900",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "6Qz",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "NO",
+                  "style": {
+                    "bold": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW",
+      "reactions": [
+        {
+          "name": "cry",
+          "users": [
+            "U01QE1SF8LW"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "client_msg_id": "bd94dc1c-5e71-4a37-827d-686d6060ca80",
+      "type": "message",
+      "text": "OH",
+      "user": "U01CWUY6ELE",
+      "ts": "1643276634.005100",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "RIX9/",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "OH"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "4bb57b6a-31b3-481e-9494-c1f5000aa853",
+      "type": "message",
+      "text": "<http://kouryuukaikanbekkan.web.fc2.com/>",
+      "user": "U01QE1SF8LW",
+      "ts": "1643276654.005300",
+      "team": "T02DHNZ5N",
+      "attachments": [
+        {
+          "from_url": "http://kouryuukaikanbekkan.web.fc2.com/",
+          "id": 1,
+          "original_url": "http://kouryuukaikanbekkan.web.fc2.com/",
+          "fallback": "自殺サイト掲示板・自殺志願者交流会館　別館",
+          "text": "このサイトは自殺願望のある方やストレスや病気、鬱で悩んでいる方等がチャットや掲示板で悩みやトラウマ、病気の事を話し合い、問題の解決に向かおうとするサイトです。",
+          "title": "自殺サイト掲示板・自殺志願者交流会館　別館",
+          "title_link": "http://kouryuukaikanbekkan.web.fc2.com/",
+          "service_name": "kouryuukaikanbekkan.web.fc2.com"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "MqFXx",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "link",
+                  "url": "http://kouryuukaikanbekkan.web.fc2.com/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "9ae52ce5-fbf7-4369-b660-8154fd4eb05e",
+      "type": "message",
+      "text": "• 1\n• 2\n• 3\n1. 3\n2. 3\n3. 3\n&gt; dadsadasa\n`dasdadsda`\n\n```dasdadasda```\n~dadsadasda~\n\n_dasdadadasdas_",
+      "user": "U01QE1SF8LW",
+      "ts": "1643276711.005600",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "Urw",
+          "elements": [
+            {
+              "type": "rich_text_list",
+              "elements": [
+                {
+                  "type": "rich_text_section",
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                },
+                {
+                  "type": "rich_text_section",
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "2"
+                    }
+                  ]
+                },
+                {
+                  "type": "rich_text_section",
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "3"
+                    }
+                  ]
+                }
+              ],
+              "style": "bullet",
+              "indent": 0,
+              "border": 0
+            },
+            {
+              "type": "rich_text_list",
+              "elements": [
+                {
+                  "type": "rich_text_section",
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "test2"
+                    }
+                  ]
+                }
+              ],
+              "style": "bullet",
+              "indent": 1,
+              "border": 0
+            },
+            {
+              "type": "rich_text_list",
+              "elements": [
+                {
+                  "type": "rich_text_section",
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "test2"
+                    }
+                  ]
+                }
+              ],
+              "style": "bullet",
+              "indent": 2,
+              "border": 0
+            },
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "\n"
+                }
+              ]
+            },
+            {
+              "type": "rich_text_list",
+              "elements": [
+                {
+                  "type": "rich_text_section",
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "3"
+                    }
+                  ]
+                },
+                {
+                  "type": "rich_text_section",
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "3"
+                    }
+                  ]
+                },
+                {
+                  "type": "rich_text_section",
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "3"
+                    }
+                  ]
+                }
+              ],
+              "style": "ordered",
+              "indent": 0,
+              "border": 0
+            },
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "\n"
+                }
+              ]
+            },
+            {
+              "type": "rich_text_quote",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "dadsadasa"
+                }
+              ]
+            },
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "\n"
+                },
+                {
+                  "type": "text",
+                  "text": "dasdadsda",
+                  "style": {
+                    "code": true
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "\n\n"
+                }
+              ]
+            },
+            {
+              "type": "rich_text_preformatted",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "dasdadasda"
+                }
+              ]
+            },
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "\n"
+                },
+                {
+                  "type": "text",
+                  "text": "dadsadasda",
+                  "style": {
+                    "strike": true
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "\n\n"
+                },
+                {
+                  "type": "text",
+                  "text": "dasdadadasdas",
+                  "style": {
+                    "italic": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW",
+      "reactions": [
+        {
+          "name": "cry",
+          "users": [
+            "U01QE1SF8LW"
+          ],
+          "count": 1
+        },
+        {
+          "name": "arigatou",
+          "users": [
+            "U01QE1SF8LW"
+          ],
+          "count": 1
+        },
+        {
+          "name": "man-bowing",
+          "users": [
+            "U01QE1SF8LW"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "client_msg_id": "dd781d0a-516c-4a20-acf2-7f8db9905665",
+      "type": "message",
+      "text": "<@U01CWUY6ELE>\n地味に2人以上のユーザーケースもテストしたかったからコメントしてくれて助かる",
+      "user": "U01QE1SF8LW",
+      "ts": "1643276897.006400",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "nQmr",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "user",
+                  "user_id": "U01CWUY6ELE"
+                },
+                {
+                  "type": "text",
+                  "text": "\n地味に2人以上のユーザーケースもテストしたかったからコメントしてくれて助かる"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "93c269e7-cab0-41ef-bfc3-739cf37f5e22",
+      "type": "message",
+      "text": "やばい",
+      "user": "U01CWUY6ELE",
+      "ts": "1643276920.006600",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "dC6r",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "やばい"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "fdc914d7-02c4-4274-ba95-954f1c308711",
+      "type": "message",
+      "text": "よくわからんけどよかった",
+      "user": "U01CWUY6ELE",
+      "ts": "1643276937.006800",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "E1q",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "よくわからんけどよかった"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW",
+      "reactions": [
+        {
+          "name": "arigatou",
+          "users": [
+            "U01QE1SF8LW"
+          ],
+          "count": 1
+        },
+        {
+          "name": "pdf",
+          "users": [
+            "U01QE1SF8LW"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "client_msg_id": "777c8748-c304-49a0-86fd-9c9d4313ac63",
+      "type": "message",
+      "text": "<@U01QT03LVEG> \nお手数ですが、テストのためにこのスレッド適当に伸ばしてくれると助かります！",
+      "user": "U01QE1SF8LW",
+      "ts": "1643366028.757669",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "359",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "user",
+                  "user_id": "U01QT03LVEG"
+                },
+                {
+                  "type": "text",
+                  "text": " \nお手数ですが、テストのためにこのスレッド適当に伸ばしてくれると助かります！"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "75288001-80fa-41be-b7b2-73b2bff61037",
+      "type": "message",
+      "text": "あぽかりぷてぃっくさうんど",
+      "user": "U01QT03LVEG",
+      "ts": "1643366226.975519",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "CzZY",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "あぽかりぷてぃっくさうんど"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "e329321a-3026-47e9-9670-fcfcba19064d",
+      "type": "message",
+      "text": "がるばにーでんりゅう",
+      "user": "U01QT03LVEG",
+      "ts": "1643366305.629459",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "LO7y",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "がるばにーでんりゅう"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "83c6b4ea-f85b-44f2-b5cb-f1c1b7f44447",
+      "type": "message",
+      "text": "ちょうせいじょうしげき",
+      "user": "U01QT03LVEG",
+      "ts": "1643366334.262019",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "zsm",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "ちょうせいじょうしげき"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "6d12cbfa-b2d5-4171-a7c5-a2d8c7167151",
+      "type": "message",
+      "text": "あーばすきゅらーきんこんきん",
+      "user": "U01QT03LVEG",
+      "ts": "1643366360.849469",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "XUrv+",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "あーばすきゅらーきんこんきん"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "4c8d04c6-a59a-4f20-9960-3e1b77ab04ad",
+      "type": "message",
+      "text": "てるみっとはんのう",
+      "user": "U01QT03LVEG",
+      "ts": "1643366422.067959",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "IeF3l",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "てるみっとはんのう"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "2a6d261a-4bb6-476d-a3dc-c52f4d8c8a31",
+      "type": "message",
+      "text": "つるぐれんそうち",
+      "user": "U01QT03LVEG",
+      "ts": "1643366516.121769",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "MEU8",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "つるぐれんそうち"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "9d2ea7aa-6887-4470-9d28-59b242e4e514",
+      "type": "message",
+      "text": "らんどるとかん",
+      "user": "U01QT03LVEG",
+      "ts": "1643366573.563709",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "sT1",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "らんどるとかん"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "f59e80b7-1b3f-4127-9332-5216a06362fd",
+      "type": "message",
+      "text": "らいんこどらーと",
+      "user": "U01QT03LVEG",
+      "ts": "1643366638.495809",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "ft4/",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "らいんこどらーと"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "0eca3783-1bf6-45ea-af42-b11f209aef14",
+      "type": "message",
+      "text": "とりすたんだくーにゃ",
+      "user": "U01QT03LVEG",
+      "ts": "1643366775.399349",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "i41X",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "とりすたんだくーにゃ"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "b6750f3f-265e-4d54-9f21-3743e7a4ceeb",
+      "type": "message",
+      "text": "えくすとりーむあいろんがけ",
+      "user": "U01QT03LVEG",
+      "ts": "1643366894.609649",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "51Mn",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "えくすとりーむあいろんがけ"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "f1632748-3be6-418a-8db8-10aa195fa60b",
+      "type": "message",
+      "text": "みっしんぐりんく",
+      "user": "U01QT03LVEG",
+      "ts": "1643366968.727769",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "V3Tw",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "みっしんぐりんく"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "0caa4cd1-6339-4dfd-861f-b7ff8e246410",
+      "type": "message",
+      "text": "みらんこびっちさいくる",
+      "user": "U01QT03LVEG",
+      "ts": "1643367046.201179",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "omve",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "みらんこびっちさいくる"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "654d7ce7-ee3b-4a73-a620-521d8523f203",
+      "type": "message",
+      "text": "ありがとう",
+      "user": "U01QE1SF8LW",
+      "ts": "1643367062.246179",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "q/7HQ",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "ありがとう"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "client_msg_id": "8e9437f8-d663-45cf-b9f4-c3f6904ea671",
+      "type": "message",
+      "text": "もう充分や",
+      "user": "U01QE1SF8LW",
+      "ts": "1643367070.785799",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "1Zk0",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "もう充分や"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW",
+      "reactions": [
+        {
+          "name": "parrot_jumping",
+          "users": [
+            "U01QT03LVEG"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "client_msg_id": "904418a6-46e8-49fd-ac78-0087279571bc",
+      "type": "message",
+      "text": "長い単語を連ねる遊び",
+      "user": "U01QT03LVEG",
+      "ts": "1643367194.904969",
+      "team": "T02DHNZ5N",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "hHT2",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "長い単語を連ねる遊び"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "type": "message",
+      "text": "image upload test",
+      "files": [
+        {
+          "id": "F030Q06CASH",
+          "created": 1643465305,
+          "timestamp": 1643465305,
+          "name": "image.png",
+          "title": "image.png",
+          "mimetype": "image/png",
+          "filetype": "png",
+          "pretty_type": "PNG",
+          "user": "U01QE1SF8LW",
+          "editable": false,
+          "size": 7998,
+          "mode": "hosted",
+          "is_external": false,
+          "external_type": "",
+          "is_public": false,
+          "public_url_shared": false,
+          "display_as_bot": false,
+          "username": "",
+          "url_private": "https://files.slack.com/files-pri/T02DHNZ5N-F030Q06CASH/image.png",
+          "url_private_download": "https://files.slack.com/files-pri/T02DHNZ5N-F030Q06CASH/download/image.png",
+          "media_display_type": "unknown",
+          "thumb_64": "https://files.slack.com/files-tmb/T02DHNZ5N-F030Q06CASH-d2a435551e/image_64.png",
+          "thumb_80": "https://files.slack.com/files-tmb/T02DHNZ5N-F030Q06CASH-d2a435551e/image_80.png",
+          "thumb_360": "https://files.slack.com/files-tmb/T02DHNZ5N-F030Q06CASH-d2a435551e/image_360.png",
+          "thumb_360_w": 360,
+          "thumb_360_h": 15,
+          "thumb_160": "https://files.slack.com/files-tmb/T02DHNZ5N-F030Q06CASH-d2a435551e/image_160.png",
+          "original_w": 431,
+          "original_h": 18,
+          "thumb_tiny": "AwACADCoOtO7/jTR1p3f8a0Mw7n6UelL3P0pPSkMDSdjSmk7GmI//9k=",
+          "permalink": "https://sonicmoov.slack.com/files/U01QE1SF8LW/F030Q06CASH/image.png",
+          "permalink_public": "https://slack-files.com/T02DHNZ5N-F030Q06CASH-7d370d3ea7",
+          "is_starred": false,
+          "has_rich_preview": false
+        }
+      ],
+      "upload": false,
+      "user": "U01QE1SF8LW",
+      "display_as_bot": false,
+      "ts": "1643530509.671459",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "0gP",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "image upload test"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "client_msg_id": "d8985add-1684-48db-8151-8be5ff451ec0",
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    },
+    {
+      "type": "message",
+      "text": "GOOD",
+      "files": [
+        {
+          "id": "F030R0HUPU5",
+          "created": 1643530763,
+          "timestamp": 1643530763,
+          "name": "1642508902353.jpg",
+          "title": "1642508902353.jpg",
+          "mimetype": "image/jpeg",
+          "filetype": "jpg",
+          "pretty_type": "JPEG",
+          "user": "U01QE1SF8LW",
+          "editable": false,
+          "size": 416390,
+          "mode": "hosted",
+          "is_external": false,
+          "external_type": "",
+          "is_public": false,
+          "public_url_shared": false,
+          "display_as_bot": false,
+          "username": "",
+          "url_private": "https://files.slack.com/files-pri/T02DHNZ5N-F030R0HUPU5/1642508902353.jpg",
+          "url_private_download": "https://files.slack.com/files-pri/T02DHNZ5N-F030R0HUPU5/download/1642508902353.jpg",
+          "media_display_type": "unknown",
+          "thumb_64": "https://files.slack.com/files-tmb/T02DHNZ5N-F030R0HUPU5-06641f4973/1642508902353_64.jpg",
+          "thumb_80": "https://files.slack.com/files-tmb/T02DHNZ5N-F030R0HUPU5-06641f4973/1642508902353_80.jpg",
+          "thumb_360": "https://files.slack.com/files-tmb/T02DHNZ5N-F030R0HUPU5-06641f4973/1642508902353_360.jpg",
+          "thumb_360_w": 270,
+          "thumb_360_h": 360,
+          "thumb_480": "https://files.slack.com/files-tmb/T02DHNZ5N-F030R0HUPU5-06641f4973/1642508902353_480.jpg",
+          "thumb_480_w": 360,
+          "thumb_480_h": 480,
+          "thumb_160": "https://files.slack.com/files-tmb/T02DHNZ5N-F030R0HUPU5-06641f4973/1642508902353_160.jpg",
+          "thumb_720": "https://files.slack.com/files-tmb/T02DHNZ5N-F030R0HUPU5-06641f4973/1642508902353_720.jpg",
+          "thumb_720_w": 540,
+          "thumb_720_h": 720,
+          "thumb_800": "https://files.slack.com/files-tmb/T02DHNZ5N-F030R0HUPU5-06641f4973/1642508902353_800.jpg",
+          "thumb_800_w": 800,
+          "thumb_800_h": 1067,
+          "thumb_960": "https://files.slack.com/files-tmb/T02DHNZ5N-F030R0HUPU5-06641f4973/1642508902353_960.jpg",
+          "thumb_960_w": 720,
+          "thumb_960_h": 960,
+          "thumb_1024": "https://files.slack.com/files-tmb/T02DHNZ5N-F030R0HUPU5-06641f4973/1642508902353_1024.jpg",
+          "thumb_1024_w": 768,
+          "thumb_1024_h": 1024,
+          "original_w": 1108,
+          "original_h": 1478,
+          "thumb_tiny": "AwAwACO4Gp26qRlbdwef5VJ5x2jHBp3EWc1HJJhsfnUCXOM5O78aZcShgCGI9qVwFaRdx5FJ5i+o/WqxcA8tRvX+9U8wErAnJAOD2NCpI5xjr2qzwWPHXFPi6Z98U9xlV7cgExLz3xVZiQOa1SSAckflURRcngHPNNoTM3Geev4GjHt+hq/5K9nIHpSeSP75pWARnB6ZBBqWLl1qqXK7jxUUkhMOPQ9aOozUYZBGKrsyCMYY7+mKzd8nHztz71aZjIM4HWmwJt5HFHmH2qAkk0ZPvSA//9k=",
+          "permalink": "https://sonicmoov.slack.com/files/U01QE1SF8LW/F030R0HUPU5/1642508902353.jpg",
+          "permalink_public": "https://slack-files.com/T02DHNZ5N-F030R0HUPU5-6731331a2a",
+          "is_starred": false,
+          "has_rich_preview": false
+        },
+        {
+          "id": "F0316GG3MJM",
+          "created": 1643530768,
+          "timestamp": 1643530768,
+          "name": "0002791185868952-web.jpg",
+          "title": "0002791185868952-web.jpg",
+          "mimetype": "image/jpeg",
+          "filetype": "jpg",
+          "pretty_type": "JPEG",
+          "user": "U01QE1SF8LW",
+          "editable": false,
+          "size": 201571,
+          "mode": "hosted",
+          "is_external": false,
+          "external_type": "",
+          "is_public": false,
+          "public_url_shared": false,
+          "display_as_bot": false,
+          "username": "",
+          "url_private": "https://files.slack.com/files-pri/T02DHNZ5N-F0316GG3MJM/0002791185868952-web.jpg",
+          "url_private_download": "https://files.slack.com/files-pri/T02DHNZ5N-F0316GG3MJM/download/0002791185868952-web.jpg",
+          "media_display_type": "unknown",
+          "thumb_64": "https://files.slack.com/files-tmb/T02DHNZ5N-F0316GG3MJM-011c3be78d/0002791185868952-web_64.jpg",
+          "thumb_80": "https://files.slack.com/files-tmb/T02DHNZ5N-F0316GG3MJM-011c3be78d/0002791185868952-web_80.jpg",
+          "thumb_360": "https://files.slack.com/files-tmb/T02DHNZ5N-F0316GG3MJM-011c3be78d/0002791185868952-web_360.jpg",
+          "thumb_360_w": 270,
+          "thumb_360_h": 360,
+          "thumb_480": "https://files.slack.com/files-tmb/T02DHNZ5N-F0316GG3MJM-011c3be78d/0002791185868952-web_480.jpg",
+          "thumb_480_w": 360,
+          "thumb_480_h": 480,
+          "thumb_160": "https://files.slack.com/files-tmb/T02DHNZ5N-F0316GG3MJM-011c3be78d/0002791185868952-web_160.jpg",
+          "thumb_720": "https://files.slack.com/files-tmb/T02DHNZ5N-F0316GG3MJM-011c3be78d/0002791185868952-web_720.jpg",
+          "thumb_720_w": 540,
+          "thumb_720_h": 720,
+          "thumb_800": "https://files.slack.com/files-tmb/T02DHNZ5N-F0316GG3MJM-011c3be78d/0002791185868952-web_800.jpg",
+          "thumb_800_w": 800,
+          "thumb_800_h": 1067,
+          "thumb_960": "https://files.slack.com/files-tmb/T02DHNZ5N-F0316GG3MJM-011c3be78d/0002791185868952-web_960.jpg",
+          "thumb_960_w": 720,
+          "thumb_960_h": 960,
+          "thumb_1024": "https://files.slack.com/files-tmb/T02DHNZ5N-F0316GG3MJM-011c3be78d/0002791185868952-web_1024.jpg",
+          "thumb_1024_w": 768,
+          "thumb_1024_h": 1024,
+          "original_w": 1500,
+          "original_h": 2000,
+          "thumb_tiny": "AwAwACSekZ1QZY4pTwM1mYknYlckA1bdjOKuaCzRscBhmn1mtFLGMsuR6irNnKWBQ84HFJSuNxsWaKKKokKqwKYlOBnJq1TDhc5GaiexpT3I2dmXaUwD6UltF5bN79KkByeefwp49amG5U9haKKK1MRjypGPmbHtUUbm43leNp4FUiSeetT2L7Ziv94frUN3NErFhQ7tt6evFBnWOZo36A8Gm2srmaTe2fUf4VUkfzJWf1NKOg5amkGDDIIIpcj1rK3EUbjV3I5T/9k=",
+          "permalink": "https://sonicmoov.slack.com/files/U01QE1SF8LW/F0316GG3MJM/0002791185868952-web.jpg",
+          "permalink_public": "https://slack-files.com/T02DHNZ5N-F0316GG3MJM-8b3d79d4af",
+          "is_starred": false,
+          "has_rich_preview": false
+        }
+      ],
+      "upload": false,
+      "user": "U01QE1SF8LW",
+      "ts": "1643530771.715409",
+      "blocks": [
+        {
+          "type": "rich_text",
+          "block_id": "E=Hmk",
+          "elements": [
+            {
+              "type": "rich_text_section",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "GOOD"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "client_msg_id": "8e24d44f-40d5-4c30-b214-aef0d0c22e3e",
+      "thread_ts": "1643276518.002100",
+      "parent_user_id": "U01QE1SF8LW"
+    }
+  ],
+  "has_more": false
+}
